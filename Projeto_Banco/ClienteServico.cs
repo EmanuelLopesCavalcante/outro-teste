@@ -61,19 +61,18 @@ namespace Projeto_Banco
 
         public void ExibirClientes()
         {
-            Console.WriteLine("Número da conta        | Nome         | CPF    ");
+            Console.WriteLine("Número da conta        | Nome / Razão social         | CPF / CNPJ    ");
             for (int i = 0; i < clientes.Count; i++)
             {
                 Console.WriteLine(clientes[i].ResumoCliente());
             }
         }
-
         public void CriarPessoaJuridica()
         {
             PessoaJuridica pessoaJuridica = new PessoaJuridica();
-            Console.WriteLine("Nome do cliente:");
+            Console.WriteLine("Razão social do cliente:");
             pessoaJuridica.RazaoSocial = Console.ReadLine();
-            Console.WriteLine("CPF do cliente:");
+            Console.WriteLine("CNPJ do cliente:");
             pessoaJuridica.CNPJ = Console.ReadLine();
             Console.WriteLine("Endereco do cliente:");
             pessoaJuridica.Endereco = Console.ReadLine();

@@ -9,6 +9,8 @@ namespace Projeto_Banco
 {
     internal class PessoaFisica : Cliente
     {
+
+       
         public string Nome { get; set; }
         public string CPF { get; set; }
         public DateTime DataNascimento { get; set; }
@@ -36,7 +38,7 @@ namespace Projeto_Banco
 
         public override string ResumoCliente() 
         { 
-            return $"{base.ResumoCliente} | {Nome} | {CPF}"; 
+            return $"{NumeroConta} | {Nome} | {CPF}"; 
         }
 
         public bool EhMaior()

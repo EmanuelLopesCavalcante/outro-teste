@@ -25,6 +25,7 @@ do
         if (PouF == "1")
         {
             clienteServico.CriarPessoaFisica();
+           
         }
         else if (PouF == "2")
         {
@@ -35,7 +36,10 @@ do
 
     else if (opcao == "5")
     {
+
         clienteServico.ExibirClientes();
+       
+
     }
     else if (opcao == "2")
     {

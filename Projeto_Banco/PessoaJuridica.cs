@@ -9,7 +9,7 @@ namespace Projeto_Banco
 {
     internal class PessoaJuridica : Cliente
     {
-
+        static List<PessoaJuridica> listapj;
         public string CNPJ { get; set; }
         public string RazaoSocial { get; set; }
 
@@ -26,7 +26,7 @@ namespace Projeto_Banco
 
         public override string ResumoCliente()
         {
-            return $"{base.ResumoCliente} | {RazaoSocial} | {CNPJ}";
+            return $"{NumeroConta} | {RazaoSocial} | {CNPJ}";
         }
 
     }
